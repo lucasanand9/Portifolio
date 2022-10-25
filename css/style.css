@@ -307,7 +307,10 @@ html[data-theme="light"]{
 
 
 
-
+    .rede-social{
+      height: 30px;
+      width: 30px;
+    }
 
   @media only screen and (max-width: 770px) {
     .materias {

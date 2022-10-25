@@ -222,7 +222,7 @@ html{
     .apresentacao h4{
       width: 50%;
       font-family: 'Courier Prime', monospace;
-      text-align: justify;
+      text-align: left; 
     }
      
       .foto{
