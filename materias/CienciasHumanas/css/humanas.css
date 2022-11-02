@@ -19,6 +19,7 @@ html{
 }
 .atividades{
     display: flex;
+    flex-wrap: wrap;
    justify-content: center;
 }
 
@@ -38,3 +39,6 @@ html{
     margin-bottom: 2vh;
     margin-top: 2vh;
 }
+
+
+
