@@ -1,10 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-/*
--arrumar a responsividade
--colocar a foto
--ver se tem mais algum conteudo para colocar
-*/
+
+/* Tirar o display none da foto quando a responsividade for aplicada */
 
 html{
     --body-bg: #5D5D7A;
@@ -246,24 +243,20 @@ html{
     height: 30px;
     width: 30px;
   }
-    @media (max-width: 1200px){
-        hr{
-          display: none;
-        }
-    }
+
 
     @media (max-width: 999px) {
       .apresentacao{
         display: block;
       }
       .foto{
-        display: block;
-       margin-left: auto;
-       margin-right: auto;
+        display: none;
       }
       .apresentacao{
         display: block;
       }
+
+
 
       
     }
@@ -273,46 +266,64 @@ html{
         padding: 40px;
       }
       body{
-        height: 100vh;
-        width: 100vw;
         overflow-x: hidden;
       }
-      .apresentacao{
-        height: 50vh;
+      .container{
+        margin-top: 0;
       }
-      p{
-        height: 50vh;
-        margin-top: 35vh;
+      .apresentacao{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        width: 90%;
+      }
+
+      .apresentacao p{
+        text-align: justify;
       }
    
     }
     @media (max-width: 413px){
       body{
-        height: 100vh;
-        width: 100vw;
         overflow-x: hidden;
       }
+      .container{
+        margin-top: 0;
+      }
       .apresentacao{
-        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
-      p{
-        height: 50vh;
-        margin-top: 5vh;
+      .Conteudo-texto{
+        align-items: center;
+        justify-content: center;
       }
+
     }
     @media (max-width: 375px){
       body{
-        height: 100vh;
-        width: 100vw;
         overflow-x: hidden;
       }
+      .container{
+        margin-top: 0;
+      }
       .apresentacao{
-        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
-      p{
-        height: 50vh;
-        margin-top: 20vh;
+
+      .apresentacao p{
+        text-align: justify;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
       }
+ 
+
     }
     
 
